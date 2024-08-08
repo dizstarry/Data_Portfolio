@@ -1,6 +1,6 @@
 **Cleaned Data Visual**📊
 
-**_Used different charts to explore survivors_**🔍
+**Used different charts to explore survivors**🔍
 
 *Removed duplicate columns*🗑
 
