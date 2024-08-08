@@ -1,5 +1,11 @@
-**Cleaned Data Visual**
+**Cleaned Data Visual**📊
 
-**_Used different charts to explore survivors_**
+**_Used different charts to explore survivors_**🔍
 
-*Removed duplicate columns*
+*Removed duplicate columns*🗑
+
+Programmes learnt so far:👨🏾‍💻
+
+-SQL 
+
+-R
