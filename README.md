@@ -1,5 +1,5 @@
-<u>Cleaned Data Visual</u>
+**Cleaned Data Visual**
 
-**Used different charts to explore survivors**
+**_Used different charts to explore survivors_**
 
 *Removed duplicate columns*
