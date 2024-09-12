@@ -1,0 +1,50 @@
+Cleaned_Data <- read_csv("Cleaned_Data.csv")
+View(Cleaned_Data)
+
+install.packages("tidyverse")
+library(tidyverse)
+Cleaned_Data <- Cleaned_Data %>% rename_all(tolower)
+
+ggplot(Cleaned_Data, aes(x = as.factor(survived))) +
+  geom_bar() +
+  xlab("Survived") +
+  ylab("Count") +
+  ggtitle("Count of Survived Passengers")
+
+ggplot(Cleaned_Data, aes(x = age)) +
+  geom_histogram(binwidth = 5, fill = "blue", color = "black") +
+  xlab("Age") +
+  ylab("Count") +
+  ggtitle("Age Distribution of Passengers")
+
+ggplot(Cleaned_Data, aes(x = as.factor(survived), y = age)) +
+  geom_boxplot() +
+  xlab("Survived") +
+  ylab("Age") +
+  ggtitle("Age Distribution by Survival Status")
+
+ggplot(Cleaned_Data, aes(x = as.factor(pclass))) +
+  geom_bar(fill = "green") +
+  xlab("Passenger Class") +
+  ylab("Count") +
+  ggtitle("Count of Passengers by Class")
+
+ggplot(Cleaned_Data, aes(x = embarked)) +
+  geom_bar(fill = "purple") +
+  xlab("Embarkation Point") +
+  ylab("Count") +
+  ggtitle("Count of Passengers by Embarkation Point")
+
+ggplot(Cleaned_Data, aes(x = age, y = fare)) +
+  geom_point(color = "red") +
+  xlab("Age") +
+  ylab("Fare") +
+  ggtitle("Scatter Plot of Age vs. Fare")
+
+ggplot(Cleaned_Data, aes(x = age, y = fare)) +
+  geom_point() +
+  facet_grid(. ~ survived) +
+  xlab("Age") +
+  ylab("Fare") +
+  ggtitle("Age vs. Fare by Survival Status")
+
